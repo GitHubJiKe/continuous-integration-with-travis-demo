@@ -21,7 +21,7 @@ after_success:
   - cd dist
   - mv * ../antd-demo
   - cd ../antd-demo
-  - now --token=nBRmE3XBcNEB2szJ21J9o5Qi --public
+  - now --token=*********** --public
 
 branches:
   only:
