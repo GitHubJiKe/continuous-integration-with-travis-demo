@@ -16,6 +16,7 @@ before_install:
 after_success:
   - npm run build
   - cp -R now.json ./dist
+  - rm -rf antd-demo
   - mkdir antd-demo
   - cd dist
   - mv * ../antd-demo
