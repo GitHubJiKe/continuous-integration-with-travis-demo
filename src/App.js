@@ -5,7 +5,7 @@ const NODE_ENV = process.env.NODE_ENV;
 
 export default () => {
   console.log("====================================");
-  console.log("打印Travis CI配置的环境变量：", NODE_ENV);
+  console.log("打印Travis CI配置的环境变量： ", NODE_ENV);
   console.log("====================================");
   return (
     <div
