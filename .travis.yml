@@ -1,0 +1,24 @@
+language: node_js
+
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: true
+
+node_js:
+  - 11
+
+before_install:
+  - npm install
+  - npm i -g now@latest
+
+after_success:
+  - npm run build:test
+  - cp -R now.json ./antd-demo-test
+  - cd ./antd-demo-test
+  - now --token=nBRmE3XBcNEB2szJ21J9o5Qi
+
+branches:
+  only:
+    - test
