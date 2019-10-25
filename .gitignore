@@ -1,3 +1,5 @@
 node_modules
 antd-demo
 dist
+.travis.yml
+now.json
