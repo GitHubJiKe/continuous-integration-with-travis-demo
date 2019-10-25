@@ -20,7 +20,7 @@ after_success:
   - cp -R now.json ./antd-demo-test
   - cd ./antd-demo
   - now --token=nBRmE3XBcNEB2szJ21J9o5Qi --prod
-  - cd ./antd-demo-test
+  - cd ../antd-demo-test
   - now --token=nBRmE3XBcNEB2szJ21J9o5Qi
 
 branches:
