@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel --no-cache ./src/index.html --open",
-    "build": "parcel build ./src/index.html --detailed-report --no-cache --out-dir antd-demo"
+    "build": "parcel build ./src/index.html --detailed-report --no-cache --out-dir antd-demo",
+    "build:test": "parcel build ./src/index.html --detailed-report --no-cache --out-dir antd-demo-test"
   },
   "repository": {
     "type": "git",
