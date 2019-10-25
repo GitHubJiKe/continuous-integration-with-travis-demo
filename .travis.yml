@@ -15,13 +15,9 @@ before_install:
 
 after_success:
   - npm run build
-  - cp -R now.json ./dist
-  - rm -rf antd-demo
-  - mkdir antd-demo
-  - cd dist
-  - mv * ../antd-demo
+  - cp -R now.json ./antd-demo
   - cd ../antd-demo
-  - now --token=*********** --public
+  - now --token=nBRmE3XBcNEB2szJ21J9o5Qi --public
 
 branches:
   only:
