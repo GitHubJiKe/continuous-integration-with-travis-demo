@@ -20,4 +20,12 @@ dev分支开发测试，实现功能将代码提交至远端；
 
 测试没问题，再提交**PR** `dev --> prod`;自动触发 prod 分支的发布。
 
+## bug 修复
 
+如果线上发现bug,需要及时修复并发布上线，可以执行`git checkout -b [**hot-fix-branch-name**] --track origin/master`命令，
+
+基于线上运行代码分支master checkout 出一个快速修复bug的分支（分支名自定义）；
+
+然后修复bug后提交代码，将本地的代码推向远端，并在远端创建一个新的修复分支；
+
+然后在远端提交**PR** merge代码到master，自动执行发布流程。
