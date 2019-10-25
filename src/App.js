@@ -9,9 +9,8 @@ function getWelcomeText() {
       return "Development World";
     case "test":
       return "Test World";
-    case "production":
+    case "prod":
       return "Production World";
-
     default:
       return "World";
   }
